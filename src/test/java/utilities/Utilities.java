@@ -12,12 +12,15 @@ public class Utilities {
     public static long PAGE_LOAD_TIMEOUT = 20;
     public static long IMPLICIT_WAIT = 10;
 
-    protected static WebDriver driver;
-    protected static WebDriverWait wait;
-    protected static BasePageTest basePageTest;
-    protected static LoginPage loginPage;
+    public WebDriver driver;
+    public WebDriverWait wait;
+    public BasePageTest basePageTest;
+    public LoginPage loginPage;
 
-
+    public Utilities(WebDriver driver) {
+        this.driver = driver;
+        this.loginPage = new LoginPage(driver);
+    }
     public void waitForPageDocumentToBeReady(){
         wait = new WebDriverWait(driver, Duration.ofSeconds(PAGE_LOAD_TIMEOUT));
         wait.until(webDriver -> ((JavascriptExecutor)webDriver)

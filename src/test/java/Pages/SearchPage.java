@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -15,9 +16,8 @@ public class SearchPage extends BasePageTest {
     @FindBy(id = "Submit")
     WebElement searchButton;
 
-    public Utilities utilities = new Utilities();
 
-    public SearchPage(){
+    public SearchPage(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
     public boolean verifySearchPageTitle(){
@@ -26,7 +26,7 @@ public class SearchPage extends BasePageTest {
 
     public SelectHotelPage clickSearchButton(){
         searchButton.click();
-        return new SelectHotelPage();
+        return new SelectHotelPage(driver);
     }
     //convience method
     public SelectHotelPage searchHotel(String hotelLocation){

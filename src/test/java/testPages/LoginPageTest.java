@@ -2,35 +2,48 @@ package testPages;
 
 import Pages.LoginPage;
 import Pages.SearchPage;
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import utilities.CsvReader;
+
+import java.util.List;
+import java.util.Map;
+
 
 public class LoginPageTest extends BasePageTest{
-    static LoginPage loginPage;
-    static SearchPage searchPage;
+    LoginPage loginPage;
+    SearchPage searchPage;
+    @BeforeEach
+    void setUpPages(){
+        if(driver == null){
+            initialization();
+        }
+        loginPage = new LoginPage(driver);
+    }
 
     public LoginPageTest(){super();}
 
-    public static void setUp(){
-        initialization();
-        loginPage = new LoginPage();
-    }
-    //getusername password from csv file
     @Test
     public void loginPageTitleTest(){
         String title = loginPage.validateLoginPageTitle();
-        Assert.assertTrue(title.equalsIgnoreCase(properties.getProperty("homePageTitle")));
+        List<Map<String, String>> users = CsvReader.readCsvAsMap("scenario.csv");
+        for(Map<String, String> user : users) {
+            Assertions.assertTrue(
+                    title.equalsIgnoreCase(user.get("homePageTitle")),
+                    "Title does not match the expected value"
+            );
+        }
     }
     @Test
     public void loginTest(){
-        searchPage = loginPage.logIntoApplication(properties.getProperty("userName"),properties.getProperty("password"));
-    }
-
-    @AfterTest
-    public static void tearDown(){
-        if(driver != null){
-            driver.quit();
+        List<Map<String, String>> users = CsvReader.readCsvAsMap("scenario.csv");
+        for(Map<String, String> user : users) {
+            searchPage = loginPage.logIntoApplication(
+                    user.get("userName"),
+                    user.get("password"));
         }
     }
+
 }

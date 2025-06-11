@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cd7b524-7c3d-4844-a4ab-3f2b1399e174" name="Changes" comment="changed password" />
+    <list default="true" id="9cd7b524-7c3d-4844-a4ab-3f2b1399e174" name="Changes" comment="changed password">
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/CsvReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SelectHotelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SelectHotelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SydneyTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SydneyTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testPages/BasePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/BasePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testPages/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testPages/SearchPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/SearchPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testPages/SelectHotelPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/SelectHotelPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/scenario.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/scenario.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/scenario.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/scenario.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,19 +51,118 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rachu\Documents\adactinProject\src\test\java" />
       <recent name="C:\Users\rachu\Documents\adactinProject\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SelectHotelPageTest.selectHotelPageTest">
+    <configuration name="LoginPageTest.loginPageTitleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adactinProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPages" />
+      <option name="MAIN_CLASS_NAME" value="testPages.LoginPageTest" />
+      <option name="METHOD_NAME" value="loginPageTitleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.loginPageTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adactinProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPages" />
+      <option name="MAIN_CLASS_NAME" value="testPages.LoginPageTest" />
+      <option name="METHOD_NAME" value="loginPageTitleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=firefox" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adactinProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPages" />
+      <option name="MAIN_CLASS_NAME" value="testPages.LoginPageTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPageTest.selectPreferredHotel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adactinProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPages" />
+      <option name="MAIN_CLASS_NAME" value="testPages.SearchPageTest" />
+      <option name="METHOD_NAME" value="selectPreferredHotel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectHotelPageTest.selectHotelPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adactinProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testPages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testPages" />
+      <option name="MAIN_CLASS_NAME" value="testPages.SelectHotelPageTest" />
+      <option name="METHOD_NAME" value="selectHotelPageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.LoginPageTest.loginPageTitleTest (1)" />
+      <item itemvalue="JUnit.LoginPageTest.loginTest" />
+      <item itemvalue="JUnit.SearchPageTest.selectPreferredHotel" />
+      <item itemvalue="JUnit.SelectHotelPageTest.selectHotelPageTest" />
+      <item itemvalue="JUnit.LoginPageTest.loginPageTitleTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SelectHotelPageTest.selectHotelPageTest" />
+        <item itemvalue="JUnit.SearchPageTest.selectPreferredHotel" />
+        <item itemvalue="JUnit.LoginPageTest.loginTest" />
+        <item itemvalue="JUnit.LoginPageTest.loginPageTitleTest (1)" />
+        <item itemvalue="JUnit.LoginPageTest.loginPageTitleTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1749654155158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed password">
+      <created>1749654426368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749654426368</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,14 +217,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/testPages/LoginPageTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/test/java/testPages/SearchPageTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/testPages/SelectHotelPageTest.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="2" />
+          <line>41</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

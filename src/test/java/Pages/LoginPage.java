@@ -20,8 +20,9 @@ public class LoginPage extends BasePageTest {
     @FindBy(id = "login")
     WebElement loginField;
 
-    public LoginPage(){
+    public LoginPage(WebDriver driver){
         PageFactory.initElements(driver,this);
+//        BasePageTest.driver = driver;
     }
     public String validateLoginPageTitle(){
         return driver.getTitle();
@@ -36,7 +37,7 @@ public class LoginPage extends BasePageTest {
     }
     public SearchPage clickLoginButton(){
         loginField.click();
-        return new SearchPage();
+        return new SearchPage(driver);
     }
 
     //convenience method.
