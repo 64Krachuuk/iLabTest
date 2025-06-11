@@ -1,28 +1,21 @@
 package testPages;
 
-import Pages.LoginPage;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import utilities.CsvReader;
 import utilities.Utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.security.PublicKey;
-import java.time.Duration;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -32,12 +25,16 @@ public class BasePageTest {
     private static final Logger LOG = LoggerFactory.getLogger("BasePageTest.class");
     protected static WebDriver driver;
     protected static Properties properties = new Properties();
-    protected LoginPage loginPage;
+
+    public static ExtentTest extentTest;
+    public static ExtentReports extentReports;
+
 
     @BeforeAll
     public static void setUp(){
         loadProperties();
         initialization();
+        reportSetUp();
     }
 
     private static void loadProperties() {
@@ -49,6 +46,11 @@ public class BasePageTest {
                 throw new RuntimeException("X failed to load scenario.properties");
             }
 
+    }
+    public static void reportSetUp(){
+        ExtentSparkReporter sparkReporter = new ExtentSparkReporter("reports/sydneyTestReport");
+        extentReports = new ExtentReports();
+        extentReports.attachReporter(sparkReporter);
     }
 
 
@@ -90,6 +92,7 @@ public class BasePageTest {
         if (driver != null) {
             driver.quit();
         }
+        extentReports.flush();
     }
 
 }

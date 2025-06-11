@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cd7b524-7c3d-4844-a4ab-3f2b1399e174" name="Changes" comment="changed password">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/CsvReader.java" afterDir="false" />
+    <list default="true" id="9cd7b524-7c3d-4844-a4ab-3f2b1399e174" name="Changes" comment="Updated the POM structure">
+      <change afterPath="$PROJECT_DIR$/src/test/java/testPages/SearchHotelTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/Screenshots.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SelectHotelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SelectHotelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SydneyTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SydneyTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testPages/BasePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/BasePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testPages/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/LoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testPages/SearchPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/SearchPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testPages/SelectHotelPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testPages/SelectHotelPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Utilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/scenario.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/scenario.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/scenario.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/scenario.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -65,7 +62,7 @@
       <recent name="C:\Users\rachu\Documents\adactinProject\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SelectHotelPageTest.selectHotelPageTest">
+  <component name="RunManager" selected="JUnit.LoginPageTest.loginTest">
     <configuration name="LoginPageTest.loginPageTitleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adactinProject" />
       <extension name="coverage">
@@ -156,10 +153,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SelectHotelPageTest.selectHotelPageTest" />
-        <item itemvalue="JUnit.SearchPageTest.selectPreferredHotel" />
         <item itemvalue="JUnit.LoginPageTest.loginTest" />
         <item itemvalue="JUnit.LoginPageTest.loginPageTitleTest (1)" />
+        <item itemvalue="JUnit.SelectHotelPageTest.selectHotelPageTest" />
+        <item itemvalue="JUnit.SearchPageTest.selectPreferredHotel" />
         <item itemvalue="JUnit.LoginPageTest.loginPageTitleTest" />
       </list>
     </recent_temporary>
@@ -194,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1749654426368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated the POM structure">
+      <created>1749680795043</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749680795043</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,19 +215,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ILab test" />
     <MESSAGE value="changed password" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed password" />
+    <MESSAGE value="Updated the POM structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the POM structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/testPages/SearchPageTest.java</url>
-          <line>33</line>
+          <line>38</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/testPages/SelectHotelPageTest.java</url>
-          <line>41</line>
+          <line>47</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
